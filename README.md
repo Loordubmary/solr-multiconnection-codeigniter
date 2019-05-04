@@ -9,4 +9,10 @@ Make solr multiple connection with same/different core in codeigniter using sola
 3. Setup Solarium
 4. Make Multiple connection in codeigniter
 
+## Setup Apache solr
 
+## Setup Codeigniter framework
+
+## Setup Solarium
+
+## Make Multiple connection in codeigniter
