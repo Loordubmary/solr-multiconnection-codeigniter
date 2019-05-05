@@ -51,20 +51,20 @@ Befor setup solarium, we have following requirements,
 ?>
 ```
 4. Start solarium in your controller page.
-      - First load solr client in __construct()
+  First load solr client in __construct()
   ```
 $this->config->load('solarium');
 $this->client = new Solarium\Client($this->config->item('endpoint1')); // This is used to make connection with solr using 'endpoint1' config variable.
   ```
   
-   - And add below function in your controller
+  And add below function in your controller
   
   ```
 $query = $this->client->createSelect();
 $result = $client->select($query);
   ```
   
-   - The full controller page is,
+  The full controller page is,
   
   ```
   <?php defined('BASEPATH') OR exit('No direct script access allowed');
