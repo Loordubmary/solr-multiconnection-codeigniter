@@ -185,8 +185,8 @@ $result = $this->endpoint2->select($query);
          }
          
          public function test_endpoint2() {
-            $query = $this->endpoint1->createSelect();
-            $result = $this->endpoint1->select($query);
+            $query = $this->endpoint2->createSelect();
+            $result = $this->endpoint2->select($query);
 
             echo 'NumFound: '.$result->getNumFound() . PHP_EOL;
 
