@@ -32,6 +32,8 @@ solr status
 solr start (Without port. It default set 8983)
 
 solr start -p 8088 (With port 8088)
+
+solr restart
 ```
 
 > **Stop solr connection**
@@ -77,6 +79,8 @@ solr sudo service solr status
 
 ```
 sudo service solr start
+
+sudo service solr restart
 ```
 
 > **Stop solr connection**
