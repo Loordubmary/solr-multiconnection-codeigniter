@@ -39,31 +39,27 @@ Befor setup solarium, we have following requirements,
 ```
 <?php
   $config['endpoint1'] = array( // endpoint1 is a connection variable. It not a default keyword.
-    'endpoint' => array(
-    'localhost' => array(
-    'host' => 'host_name', // localhost or www.host.com
-    'port' => 'port_value', //Default 8983 or 8080 etc,
-    'path' => '/solr/',
-    'core' => 'solr_core_name' // core1 or movie1 or etc,
- 			        )
- 			    )
- 			);
- 	?>
+      'endpoint' => array(
+          'localhost' => array(
+              'host' => 'host_name', // localhost or www.host.com
+              'port' => 'port_value', //Default 8983 or 8080 etc,
+              'path' => '/solr/',
+              'core' => 'solr_core_name' // core1 or movie1 or etc,
+          )
+      )
+  );
+?>
 ```
 4. Start solarium in your controller page.
   - First load solr client in __construct()
   ```
-  public function __construct() {
-    parent::__construct();
     $this->config->load('solarium');
     $this->client = new Solarium\Client($this->config->item('endpoint1')); // This is used to make connection with solr using 'endpoint1' config variable.
-  }
   ```
   - And add below function in your controller
   ```
       $query = $this->client->createSelect();
-      $resultset = $client->select($query);
-  
+      $result = $client->select($query);
   ```
   - The full controller page is,
   ```
@@ -95,6 +91,6 @@ Befor setup solarium, we have following requirements,
          }
      }
 
-  <?php>  
+  ?>
   ```
 ## Make Multiple connection in codeigniter
