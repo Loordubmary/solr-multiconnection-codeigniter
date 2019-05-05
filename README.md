@@ -41,6 +41,7 @@ solr stop -p 8088 (With port 8088)
 
 solr stop -all (All connection)
 ```
+
 > **Create and manage core**
 
 ```
@@ -57,12 +58,43 @@ solr delete -c test_core
 First put the file into solr folder. like here.
 
 cd solr-8.0.0\example\example1.xml
-
 cd solr-8.0.0\example\example2.xml
 
 java -Dc=directors -jar post.jar *.xml // It upload both example1.xml and example2.xml
 
 java -Dc=directors -jar post.jar example1.xml // It upload both example1.xml only
+```
+
+**For Ubentu:**
+
+> **Check solr status**
+
+```
+solr sudo service solr status
+```
+
+> **Start solr connection**
+
+```
+sudo service solr start
+```
+
+> **Stop solr connection**
+
+```
+sudo service solr stop
+```
+
+> **Create and manage core**
+
+```
+> Create Core:
+
+sudo su - solr -c "/opt/solr/bin/solr create -c test_core -n data_driven_schema_configs"
+
+> Delete Core:
+
+sudo su - solr -c "/opt/solr/bin/solr delete -c test_core -n data_driven_schema_configs"
 ```
 
 ## 2. Setup Codeigniter framework
