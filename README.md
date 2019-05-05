@@ -41,6 +41,29 @@ solr stop -p 8088 (With port 8088)
 
 solr stop -all (All connection)
 ```
+> **Create and manage core**
+
+```
+> Create Core:
+
+solr create -c test_core
+
+> Delete Core:
+
+solr delete -c test_core
+
+> Import Document into the core:
+
+First put the file into solr folder. like here.
+
+cd solr-8.0.0\example\example1.xml
+
+cd solr-8.0.0\example\example2.xml
+
+java -Dc=directors -jar post.jar *.xml // It upload both example1.xml and example2.xml
+
+java -Dc=directors -jar post.jar example1.xml // It upload both example1.xml only
+```
 
 ## 2. Setup Codeigniter framework
 
