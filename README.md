@@ -17,7 +17,7 @@ Make multiple solr connection with same/different core in codeigniter using sola
 3. Upload the solr folders and files to your server.
 4. Set JRE path into solr/bin/solr.cmd
 5. Solr commands for start, stop and create core for here,
-### For Windows:
+**For Windows:**
 ## 2. Setup Codeigniter framework
 
 1. Download codeigniter from [this link](https://codeload.github.com/bcit-ci/CodeIgniter/zip/3.1.10).
