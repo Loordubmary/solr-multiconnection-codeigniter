@@ -51,6 +51,7 @@ Befor setup solarium, we have following requirements,
 ?>
 ```
 4. Start solarium in your controller page.
+
   First load solr client in __construct()
   ```
 $this->config->load('solarium');
