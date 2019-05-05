@@ -1,4 +1,4 @@
-# Solr - How to create multiconnection in codeigniter using Solarium
+# Solr - How to create multi-connection in codeigniter using Solarium
 
 Make multiple solr connection with same/different core in codeigniter using solarium.
 
