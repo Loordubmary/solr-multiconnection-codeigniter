@@ -22,19 +22,25 @@ Make multiple solr connection with same/different core in codeigniter using sola
 
 > **Check solr status**
 
+```
 solr status
+```
 
 > **Start solr connection**
 
+```
 solr start (Without port. It default set 8983)
 
 solr start -p 8088 (With port 8088)
+```
 
 > **Stop solr connection**
 
+```
 solr stop -p 8088 (With port 8088)
 
 solr stop -all (All connection)
+```
 
 ## 2. Setup Codeigniter framework
 
