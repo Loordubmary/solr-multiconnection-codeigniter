@@ -98,4 +98,6 @@ $result = $client->select($query);
 
   ?>
   ```
+5. Run the controller. For Example server_path/Test/test.
+
 ## Make Multiple connection in codeigniter
