@@ -9,9 +9,9 @@ Make multiple solr connection with same/different core in codeigniter using sola
 3. Setup Solarium
 4. Make Multiple connection in codeigniter
 
-## Setup Apache solr
+## 1. Setup Apache solr
 
-## Setup Codeigniter framework
+## 2. Setup Codeigniter framework
 
 1. Download codeigniter from [this](https://codeload.github.com/bcit-ci/CodeIgniter/zip/3.1.10).
 2. Unzip the package.
@@ -20,7 +20,7 @@ Make multiple solr connection with same/different core in codeigniter using sola
 5. If you intend to use a database, open the application/config/database.php file with a text editor and set your database settings.
 6. run your application via server_url (Example: www.example.com or localhost/project_name).
 
-## Setup Solarium
+## 3. Setup Solarium
 
 Befor setup solarium, we have following requirements,
 
@@ -98,9 +98,9 @@ $result = $this->endpoint1->select($query);
 
   ?>
   ```
-5. Run the test funtion. For Example server_path/Test/test.
+5. Run the controller and check the outputs. (Example: server_path/Test/test).
 
-## Make multiple solr connection in codeigniter
+## 4. Make multiple solr connection in codeigniter
 
 To implement multiple solr connection is very easy and simple. Just add Another set of connection endpoints into the config file like solarium.php.
 
