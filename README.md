@@ -33,7 +33,6 @@ solr start (Without port. It default set 8983)
 
 solr start -p 8088 (With port 8088)
 
-solr restart
 ```
 
 > **Stop solr connection**
@@ -66,13 +65,6 @@ java -Dc=directors -jar post.jar *.xml // It upload both example1.xml and exampl
 
 java -Dc=directors -jar post.jar example1.xml // It upload both example1.xml only
 ```
-***Note***
-
-```
-- check status, solr start/stop and Core create/delete command are run `serverpath/solr/bin`
-
-- Import document is run `serverpath/solr/example/exampledocs`
-```
 
 **For Ubentu:**
 
@@ -87,7 +79,6 @@ solr sudo service solr status
 ```
 sudo service solr start
 
-sudo service solr restart
 ```
 
 > **Stop solr connection**
@@ -106,6 +97,14 @@ sudo su - solr -c "/opt/solr/bin/solr create -c test_core -n data_driven_schema_
 > Delete Core:
 
 sudo su - solr -c "/opt/solr/bin/solr delete -c test_core -n data_driven_schema_configs"
+```
+
+***Note***
+
+```
+- check status, solr start/stop and Core create/delete command are run `serverpath/solr/bin`
+
+- Import document is run `serverpath/solr/example/exampledocs`
 ```
 
 ## 2. Setup Codeigniter framework
