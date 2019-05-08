@@ -68,9 +68,11 @@ java -Dc=directors -jar post.jar example1.xml // It upload both example1.xml onl
 ```
 ***Note***
 
-check status, solr start/stop and Core create/delete command are run `serverpath/solr/bin`
+```
+- check status, solr start/stop and Core create/delete command are run `serverpath/solr/bin`
 
-Import document is run `serverpath/solr/example/exampledocs`
+- Import document is run `serverpath/solr/example/exampledocs`
+```
 
 **For Ubentu:**
 
